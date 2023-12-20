@@ -18,8 +18,8 @@ public:
 		head = nullptr;
 	}
 
-	List(List&&) { // move constructor
-
+	List(List&& list_copy) { // move constructor
+		head = list_copy.head;
 	}
 
 	~List() {
